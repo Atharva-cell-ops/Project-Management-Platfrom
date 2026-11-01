@@ -2,7 +2,8 @@
 
 > A production-grade, full-stack collaborative project management platform built for modern engineering teams. Featuring real-time Kanban workspaces, role-based authorization (RBAC), drag-and-drop task pipelines, activity audit logs, interactive comments, and dark/light modes.
 
-🌐 **Live Application**: [https://frontend-five-jet-81.vercel.app](https://frontend-five-jet-81.vercel.app)
+🌐 **Live Demo (Frontend)**: [https://frontend-five-jet-81.vercel.app](https://frontend-five-jet-81.vercel.app)  
+🔌 **Live API & WebSocket (Backend)**: [https://flowboard-backend-ao1v.onrender.com](https://flowboard-backend-ao1v.onrender.com)
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.4-blue.svg)](https://www.typescriptlang.org/)
 [![React](https://img.shields.io/badge/React-18.3-61dafb.svg)](https://reactjs.org/)

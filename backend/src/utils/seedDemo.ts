@@ -59,3 +59,4 @@ export const ensureDemoUsersSeeded = async (prisma: PrismaClient) => {
     logger.warn('Failed to seed demo accounts:', err.message);
   }
 };
+
