@@ -4,8 +4,9 @@ services:
     runtime: node
     region: oregon
     plan: free
-    buildCommand: cd backend && npm install && npx prisma generate && npm run build
-    startCommand: cd backend && npx prisma db push --accept-data-loss && node dist/index.js
+    rootDir: backend
+    buildCommand: npm install && npx prisma generate && npm run build
+    startCommand: npx prisma db push --accept-data-loss && npm run db:seed && node dist/index.js
     envVars:
       - key: NODE_ENV
         value: production
@@ -19,3 +20,4 @@ services:
         value: file:./dev.db
       - key: CLIENT_URL
         value: https://frontend-five-jet-81.vercel.app
+
