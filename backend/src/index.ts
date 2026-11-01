@@ -3,8 +3,13 @@ import { createApp } from './app';
 import { initializeSocket } from './socket';
 import { config } from './config';
 import { logger } from './utils/logger';
+import { prisma } from './utils/prisma';
+import { ensureDemoUsersSeeded } from './utils/seedDemo';
 
 const startServer = async () => {
+  // Ensure demo accounts exist on boot
+  await ensureDemoUsersSeeded(prisma);
+
   const app = createApp();
   const server = http.createServer(app);
 
